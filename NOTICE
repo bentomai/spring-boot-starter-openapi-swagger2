@@ -1,0 +1,37 @@
+NOTICE
+
+This project uses the following third-party components:
+
+1. **Spring Boot Starter**
+   - Copyright (c) 2011-2024 Pivotal Software, Inc. and others.
+   - Licensed under the Apache License, Version 2.0.
+   - URL: https://github.com/spring-projects/spring-boot
+
+2. **SpringDoc OpenAPI Starter WebMVC UI**
+   - Copyright (c) 2019-2024 SpringDoc.
+   - Licensed under the Apache License, Version 2.0.
+   - URL: https://springdoc.org/
+
+3. **SpringDoc OpenAPI Starter WebMVC API**
+   - Copyright (c) 2019-2024 SpringDoc.
+   - Licensed under the Apache License, Version 2.0.
+   - URL: https://springdoc.org/
+
+4. **Swagger Annotations**
+   - Copyright (c) 2011-2024 SmartBear Software.
+   - Licensed under the Apache License, Version 2.0.
+   - URL: https://github.com/swagger-api/swagger-core
+
+5. **SpringFox Core**
+   - Copyright (c) 2013-2024 SpringFox Authors.
+   - Licensed under the Apache License, Version 2.0.
+   - URL: https://springfox.github.io/springfox/
+
+6. **Reflections**
+   - Copyright (c) 2010-2024 Reflections contributors.
+   - Licensed under the Apache License, Version 2.0.
+   - URL: https://github.com/ronmamo/reflections
+
+Additional legal notices:
+
+- This project includes components from various sources, each of which is licensed under the Apache License, Version 2.0. Please refer to the respective URLs for more information about each component and its license.
