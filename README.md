@@ -96,7 +96,7 @@ springdoc:
 
 ### 在线体验
 - 在线文档
-- <a href="https://gitee.com/bento_mai/spring-boot-starter-openapi-swagger2-example">示例项目</a>
+- <a href="https://github.com/bentomai/spring-boot-starter-openapi-swagger2-example">示例项目</a>
 
 ### 使用须知
 - **适用范围**：本组件适用于 Spring Boot 3.x 及以上版本的应用程序，旨在简化 OpenAPI 文档的生成与维护工作。
