@@ -30,7 +30,7 @@ spring-boot-starter-openapi-swagger2 是一个基于 Spring Boot 3.x 框架的�
 <dependency>
     <groupId>io.github.bentomai</groupId>
     <artifactId>spring-boot-starter-openapi-swagger2</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
