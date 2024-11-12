@@ -131,6 +131,8 @@ public class OpenApiTagCustomizer implements GlobalOpenApiCustomizer{
 
                         if(StringUtils.isBlank(originalPropertySchema.getTitle()) && StringUtils.isNoneBlank(apiModelProperty.value())){
                             originalPropertySchema.setTitle(apiModelProperty.value());
+                        }else if(StringUtils.isBlank(originalPropertySchema.getTitle()) && StringUtils.isNoneBlank(apiModelProperty.name())){
+                            originalPropertySchema.setTitle(apiModelProperty.name());
                         }
 
                         if(StringUtils.isBlank(originalPropertySchema.getType())){
