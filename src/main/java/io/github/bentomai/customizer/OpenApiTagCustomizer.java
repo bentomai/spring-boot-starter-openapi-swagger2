@@ -86,20 +86,11 @@ public class OpenApiTagCustomizer implements GlobalOpenApiCustomizer{
             Set<Class<?>> annotatedClasses = reflections.getTypesAnnotatedWith(io.swagger.annotations.ApiModel.class);
             for (Class<?> clazz : annotatedClasses) {
                 io.swagger.annotations.ApiModel apiModel = clazz.getAnnotation(io.swagger.annotations.ApiModel.class);
-                io.swagger.v3.oas.annotations.media.Schema schemaModel = clazz.getAnnotation(io.swagger.v3.oas.annotations.media.Schema.class);
-                String modelName = "";
 
-                if(apiModel!=null){
-                    modelName = apiModel.value().isEmpty() ? clazz.getSimpleName() : apiModel.value();
-                }else if(schemaModel!=null){
-                    modelName = schemaModel.name();
-                }
+                String modelName = clazz.getSimpleName();
 
                 if (apiModel != null) {
                     Schema<?> schema = openApi.getComponents().getSchemas().get(clazz.getSimpleName());
-                    if(schema == null){
-                        schema = openApi.getComponents().getSchemas().get(modelName);
-                    }
                     if(schema == null){
                         schema = new Schema<>();
                     }
@@ -125,6 +116,9 @@ public class OpenApiTagCustomizer implements GlobalOpenApiCustomizer{
                             Schema<?> propertySchema = new Schema<>();
                             propertySchema.setType(field.getType().getSimpleName());
                             propertySchema.setTitle(apiModelProperty.value());
+                            if(StringUtils.isBlank(propertySchema.getTitle())){
+                                propertySchema.setTitle(apiModelProperty.name());
+                            }
                             propertySchema.setDescription(apiModelProperty.notes());
                             propertySchema.setExample(apiModelProperty.example());
 

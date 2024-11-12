@@ -6,7 +6,7 @@
 
     <groupId>io.github.bentomai</groupId>
     <artifactId>spring-boot-starter-openapi-swagger2</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <description>
         Spring Boot 3.x OpenApi Swagger2 Adapter
