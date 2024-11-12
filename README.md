@@ -1,4 +1,4 @@
-<h2 align="center" style="margin: 30px 0 30px; font-weight: bold;">spring-boot-starter-openapi-swagger2 V1.0.1</h2>
+<h2 align="center" style="margin: 30px 0 30px; font-weight: bold;">spring-boot-starter-openapi-swagger2 V1.0.2</h2>
 
 <h4 align="center">基于SpringBoot 3.x + springdoc-openapi 适配 swagger2.9.2 注解</h4>
 
